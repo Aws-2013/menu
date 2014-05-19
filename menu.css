@@ -1,0 +1,167 @@
+ul{
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+
+
+.menu{
+}
+
+/*VERTICAL MENU STYLE*/
+.vertical .my_menu{
+	width:20%;
+}
+
+.vertical .menu li.rootMenuItem{
+	margin:1px 1px;
+	border:1px solid #ccc;
+	position:relative;
+	background: #084387;
+}
+
+.vertical .menu li.rootMenuItem a{
+	text-decoration: none;
+	color:#0078C1;
+	display:block;
+	padding:6px 30px;
+}
+
+.vertical .slideOutSubMenu {
+	position:absolute;
+	border:1px solid #ccc;
+	left:-1px;
+	display:none;
+	width:200px;
+	background: #fff;
+}
+
+.vertical .menu li.subMenuItem{	
+	background: #e1e1e1;
+}
+.vertical .menu li.subMenuItem a{
+	padding:6px 10px;
+}
+
+
+
+/*HORIZONTAL MENU STYLE*/
+.ddMenu.horizontal{
+	float:left;
+	width:100%;
+}
+
+.my_menu, .menu{
+	float:left;
+	width:100%;
+	background:#084387;
+}
+.my_menu{margin:0 0 25px 0}
+.horizontal .menu li.rootMenuItem{
+	float:left;
+	margin:0 -1px;
+	/*border:1px solid #ccc;*/
+	/*position:relative;*/
+	background: #084387;
+	color:#fff;
+}
+
+.horizontal .menu li.rootMenuItem a, .horizontal .menu li.rootMenuItem span{
+	text-decoration: none;
+	color:#fff;
+	display:block;
+	padding:6px 10px;
+	font-weight:bold;
+}
+
+.horizontal .menu li.rootMenuItem a:hover {	
+	/*background: #fff;
+	color:#084387*/
+}
+
+.horizontal .slideOutSubMenu {
+	position:absolute;
+	display:none;
+	background: #fff;
+	z-index: 2;
+	/*border:1px solid #ccc;*/
+	border-bottom: 1px solid #67A3D5;
+	border-left: 1px solid #67A3D5;
+	border-right: 1px solid #67A3D5;
+}
+.horizontal ul.slideOutSubMenu li:hover a{
+	background: #568ac3;
+	color:#fff;	
+}
+
+
+
+.menu > li:hover > a {
+	background: #568ac3;
+	color: #fff;
+}
+
+.horizontal ul.slideOutSubMenu li span.item_header, .horizontal ul.slideOutSubMenu li:hover span.item_header{
+	background: #ebebeb;
+	color:#084387;	
+}
+
+.menu > li > span.item_header, .menu > li:hover > span.item_header {
+	background: #ebebeb;
+	color: #084387;
+}
+
+.horizontal .menu li.subMenuItem{
+	background: #fff ;
+}
+.horizontal .menu li.subMenuItem a{
+	padding:4px 10px;	
+	color:#084387;	
+}
+
+
+/*HORIZONTAL MENU STYLE MEGA*/
+.menuMega.horizontal{
+	float:left;
+	width:100%;
+}
+.menuMega.horizontal .menu li.rootMenuItem{
+	float:left;
+	margin:0 1px;
+	border:1px solid #ccc;
+	position:relative;
+	background: #e1e1e1 url(http://www.ipreo.com/images/grad.jpg);
+	width:10%;
+}
+
+.menuMega.horizontal .menu li.rootMenuItem a{
+	text-decoration: none;
+	color:#0078C1;
+	display:block;
+	padding:4px 30px;
+}
+
+.menuMega.horizontal .slideOutSubMenu {
+	width:450px;
+}
+.menuMega.horizontal .itemsPanelHeader {
+	float:left;
+	width:210px;
+	background: #fff;
+	margin-left:10px
+}
+.menuMega.horizontal .menu li.itemsPanelHeader a.itemsPanelHeaderLabel{
+	font-weight:bold;
+	padding: 4px 5px;
+	margin-bottom:5px;
+	margin-top:10px;
+	cursor:default;
+}
+
+.menuMega.horizontal .menu li.itemsPanelHeader ul.itemsPanel a {
+	padding:0 10px 10px 10px;
+	
+}
+.menuMega.horizontal .menu li.itemsPanelHeader ul.itemsPanel a:hover {
+	text-decoration: underline;
+}
